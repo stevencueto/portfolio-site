@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sanchez&display=swap');
+
 
 *{
     box-sizing: border-box;
@@ -9,7 +11,7 @@
 body{
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    height: 1900px;
+    min-width: 375px;
 }
 
 .navbar{
@@ -22,6 +24,7 @@ body{
     width: fu;
     flex-direction: column;
     height: 40px;
+    box-shadow: 1px 5px 5px rgb(122, 122, 122);
 }
 
 .nav-header-text{
@@ -94,7 +97,7 @@ body{
     pointer-events: auto;
     transition: 0.4s  ease-in-out;
     background-color: #333;
-
+    box-shadow: 2px 2px 2px 0px rgb(122, 122, 122);
 }
 
 .heading-logo{
@@ -180,40 +183,40 @@ body{
     height:100vh;
     overflow:hidden;
 
-  }
-  ..personal-image{
-      margin-top: -10vh;
-      width: 30vw;
-  }
+}
   
-  .greeting{
+.greeting{
     display: inline-block;
     overflow: hidden;
     white-space: nowrap;
-    width 70vw;
-    padding; auto 10%;
-  }
+    width: 70vw;
+    padding: auto 10%;
+}
   
-  .welcome{
+.welcome{
     width : auto;
     animation: fade-in 7s infinite;
-  }
+}
   
-  .second-greeting{
+.second-greeting{
     width: 0px;
     animation: reveal 7s infinite;
-  }
+}
   
-  .greeting span {
+.greeting span {
     margin-left:-32vw;
     animation: slidein 7s infinite;
-  }
+}
   
-  .subheading-tex{
+.subheading-tex{
     animation: slower-faid-in 7s infinite;
     margin: 10px auto;
-  }
-  @keyframes slower-faid-in {
+}
+
+.hero-text-div{
+      margin-top: 30px;
+}
+@keyframes slower-faid-in {
       0% {
         opacity:0;
     }
@@ -232,55 +235,93 @@ body{
       100% {
         opacity: 1;
     }
-  }
+}
   
   
-  @keyframes fade-in {
+@keyframes fade-in {
       0% {
-        opacity:0;
+        opacity: 0;
     }
       20% {
-        opacity:1;
+        opacity: 1;
     }
       80% {
-        opacity:1;
+        opacity: 1;
     }
       100% {
-        opacity:0;
+        opacity: 0;
     }
-  }
+}
   
-  @keyframes slidein {
+@keyframes slidein {
       0% { 
-        margin-left:-800px; 
+        margin-left: -800px; 
     }
       20% {
-        margin-left:-800px; 
+        margin-left: -800px; 
     }
       35% { 
-        margin-left:0px; 
+        margin-left: 0px; 
     }
       100% { 
-        margin-left:0px; 
+        margin-left: 0px; 
     }
-  }
+}
   
-  @keyframes reveal {
+@keyframes reveal {
       0% {
-        opacity:0;width: 0px;
+        opacity: 0;
+        width: 0px;
     }
       20% {
-        opacity:1;width: 0px;
+        opacity: 1;
+        width: 0px;
     }
       30% {
         width: 355px;
     }
       80% {
-        opacity:1;
+        opacity: 1;
     }
       100% {
         opacity: 0;
         width: 355px;
     }
-  }
-  
+}
+footer{
+    background-color: #333;
+}
+.ul-footer{
+    padding-top: 1rem;
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    height: 12vh;
+}
+.li-footers{
+    font-size: 1em;
+    text-decoration: none;
+    color: white;
+    padding: 0;
+}
+
+.footer-links{
+    text-decoration: none;
+    color: rgb(67, 90, 153);
+}
+
+@media only screen and (min-width: 450px){
+    .ul-footer{
+        flex-direction: row;
+        height: 6vh;
+        padding-top: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .ul-footer{
+        max-width: 900px;
+        padding-top: 2.5rem;
+        height: 10vh;
+    }
+}
