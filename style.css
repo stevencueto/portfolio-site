@@ -85,7 +85,7 @@ body{
     right: 0rem;
     width: 100%;
     opacity: 0;
-    transform: translateY(250px);
+    transform: translateY(-250px);
     pointer-events: none;
     transition:  0.4s  ease-in-out;
     margin: auto;
@@ -131,7 +131,7 @@ body{
     .nav-elements{
         pointer-events: auto;
         background-color: #555;
-        transform: translateY(450px);
+        transform: translateY(-450px);
         width: 50%;
         padding-bottom: 5rem;
     }
@@ -324,4 +324,30 @@ footer{
         padding-top: 2.5rem;
         height: 10vh;
     }
+}
+
+
+/* about me section */
+
+.hero-section-about-me{
+    height: 50vh;
+    width: auto;
+
+}
+
+.profile-pic{
+    margin: auto;
+    display: inline-block;
+    width: 200px;
+    border: 2px solid;
+    border-image: linear-gradient(#f6b73c, #4d9f0c) 30;
+}
+
+.about-me-article{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.about-me-header{
+    color: #333;
 }
