@@ -58,7 +58,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 7vw;
+    width: 31px;
     height: 23px;
 }
 
@@ -102,12 +102,6 @@ body{
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (min-width: 450px) {
-    .toggle-button{
-        top: 1.5rem;
-        right: 1.5rem;
-        width: 40px;
-        height: 25px;
-    }
 
     .navbar{
         display: flex;
