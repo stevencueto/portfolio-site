@@ -2,7 +2,8 @@ console.log('It Works')
 
 document.addEventListener('click', e=> {
     const toggleMenu = e.target.closest('.toggle-button');
-    const navMenuClick = document.querySelector('.nav-elements')
+    const navMenuClick = document.querySelector('.nav-elements-aside')
+    console.log('cliked')
 
     if(toggleMenu){
         navMenuClick.classList.toggle('active')
@@ -10,7 +11,7 @@ document.addEventListener('click', e=> {
     }
     let currentMenu
     if(currentMenu){
-        currentMenu = document.closest('.nav-elements');
+        currentMenu = document.closest('.nav-elements-aside');
         navMenuClick.classList.toggle('active')
     }
 
