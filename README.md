@@ -3,5 +3,3 @@ When making the page, I started by tackling first the dropdown menu, as that see
 
 Now with that done, I Have to Select the font for my page, background images, and also the color scheme to fit my page, which is more difficult that the coding part.
 
-
-#
