@@ -3,3 +3,10 @@ When making the page, I started by tackling first the dropdown menu, as that see
 
 Now with that done, I Have to Select the font for my page, background images, and also the color scheme to fit my page, which is more difficult that the coding part.
 
+# saturday
+
+was al about changing th animations to the headers, also making my resume on the pdf version and the resume for the website, i wanted them to look as similar as posible to have a nice consistency but didn't feel like uploading the pdf version of my resume was the right move professionally speaking, so I took the time to make it interactive, still havin issues with grid, as I find myself not comfortable with it as I am with Flex-box.
+
+# sunday
+
+Made my bio, also went back to change the resume to make it even more like the actual resume on the pdf for de desktop version, still challenged with the grid.

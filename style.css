@@ -4,6 +4,7 @@
     box-sizing: border-box;
     margin: 0 auto;
     padding: 0;
+    font-weight: 400;
 }
 
 body{
@@ -272,7 +273,7 @@ footer{
 
 .heading {
    letter-spacing: .3rem;
-	background-image: url(https://media.giphy.com/media/GGCtFbOeefY5O/giphy.gif);
+	background-image: url(https://media.giphy.com/media/Byour3OgR0nWnRR6Tc/giphy.gif);
 	background-size: cover;
 	color: transparent;
 	background-clip: text;
@@ -280,6 +281,7 @@ footer{
 	font-size: 5.5rem;
 	line-height: .75;
 	margin: 10px 0;
+    font-weight: 700;
 }
 @media only screen and (min-width: 450px){
     .home-heading {
@@ -306,7 +308,9 @@ footer{
 
 /* About Me Header */
 .content-header{
-    background-color:  #151719;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.9)), url(https://media.giphy.com/media/GGCtFbOeefY5O/giphy.gif);
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -314,7 +318,7 @@ footer{
     width: 100%;
 }
 .waviy-header {
-    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.5));
     font-size: 52px;
     pointer-events: none;
 }
@@ -325,8 +329,6 @@ footer{
     text-transform: uppercase;
     animation: jumps-shadows 1s infinite;
     animation-delay: calc(.1s * var(--css-jumpy));
-    z-index: 1;
-    
 }
  @keyframes jumps-shadows {
     0%{
@@ -372,7 +374,7 @@ footer{
 
 .flipped-h2 span{
     margin-left: -2px;
-    /* position: relative; */
+    position: relative;
     display: inline-block;
     font-size: 40px;
     text-transform: capitalize;
@@ -404,45 +406,53 @@ footer{
 
 }
 
+/* article about me */
 
-.profilepic-and-tittle{
-    display: flex;
-    justify-items: center;
-    flex-direction: column;
+.about-me-section{
+    max-width: 340px;
+    margin-bottom: 10vh;
 }
-.about-me-article{
-    display: flex;
-    justify-items: center;
-    flex-direction: column;
 
-}
-.about-me-article p{
+.about-me-section p{
     padding: 10px 30px;
+    font-weight: 100;
+    line-height: 1.4;
+    
 }
 
 .profile-picture{
-    width: 100px;
-    margin: 10px auto;
+    width: 200px;
+    margin: auto;
+    display: block;
+
 }
 
 @media only screen and (min-width: 450px){
-    .about-me-article p{
-        font-size: 23px;
-    }
-    .profilepic-and-tittle{
-        flex-direction: row;
-        justify-items: center;
-    }
-
-    .profilepic-and-tittle h3{
-        margin: 80px 20px;
-        font-weight: 400px;
+    .about-me-section{
+        max-width: 650px;
     }
     .profile-picture{
-        width: 160px;
+        max-width: 300px;
     }
 
 }
+
+@media only screen and (min-width: 768px){
+    .about-me-section{
+        max-width: 1150px;
+    }
+    .about-me-section p{
+        text-align: justify;
+    }
+    .profile-picture{
+        width: 200px;
+        margin: 2rem ;
+        float: left; 
+    }
+    
+}
+
+
 /* go to contacst button */
 
 .button-primary{
@@ -478,20 +488,229 @@ footer{
 
 .project-grid{
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
     grid-gap: 15px;
     height: auto;
     margin: 20px auto;
+    
 }
 
-.project-grid div{
+.gallery{
     height: 350px;
     width: 350px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+    margin: 20px auto 70px;
+   
 }
+.image-text{
+    font-weight: 100;
+}
+
+.image-text small{
+    font-weight: 100;
+}
+.image-text small a{
+    font-weight: 100;
+    text-decoration: none;
+    color: black;
+}
+
+.gallery img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
 
 .space-battle{
     background-image: url('images/space-battle-1.png');
+}
+
+.galery-desciption{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 5px;
+}
+@media only screen and (min-width: 450px){
+
+    .gallery{
+       width: 70%;
+       height: 30%;
+       min-height: 450px;
+       max-width: 550px;
+   }
+   .gallery img{
+       margin-left: auto;
+   }
+}
+
+
+@media only screen and (min-width: 768px){
+    .project-grid{
+        grid-template-columns: repeat(2, auto);
+        column-gap: 9px;
+        }
+
+}
+
+.resume-article{
+    width: 350px ;
+    line-height: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.resume-section-grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 20px;
+}
+
+.resume-li{
+    margin-left: 18px;
+}
+.resume-skills-article .resume-li{
+    margin-right: 156px;
+}
+
+.resume-article h3{
+    text-align: center;
+    margin: 20px auto;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.resume-article strong{
+    font-weight: 700;
+}
+
+.resume-article strong small{
+    font-weight: 700;
+    color: 	#666666;
+}
+
+.certifications-section{
+    margin-bottom: 4rem;
+}
+
+.education-article h4{
+    font-weight: 500;
+    color: 	#666666;
+}
+.education-article > h4:nth-child(4){
+    color: black;
+}
+.resume-hide-if-big{
+    display: block;
+}
+
+.resume-ul{
+    margin: 20px auto;
+}
+
+@media only screen and (min-width: 450px){
+    .resume-section-grid{
+        max-width: 600px;
+    }
+    .resume-article{
+        width: 450px ;
+    }
+}
+
+@media only screen and (min-width: 948px){
+
+    .resume-main{
+        max-width: 1000px;
+    }
+    .resume-section-grid{
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 1000px;
+        position: relative;
+        left: 8%;
+    }
+    .resume-skills-article, .education-article{
+        width: 300px;
+    }
+
+    .resume-skills-article{
+        border: 1px solid black;
+    }
+    .resume-skills-article h3{
+        margin-left: 10px;
+    }
+    .mini-bio {
+        margin-left: 10px;
+    }
+
+    .personal-statement-section{
+        border-bottom:  1px black solid;
+        margin-right: 160px;
+        border-left: 1px black solid;
+    }
+
+    .resume-article h3{
+        font-size: 1.4em;
+        text-align: left;
+        padding-left: 10px;
+    }
+
+    .resume-li{
+        margin-left: 34px;
+        width: 350px;
+    }
+
+    .work-experience{
+        margin-left: 20px;
+    }
+
+    .work-experience .resume-ul .resume-li{
+        margin: 0 0 0 15px;
+    }
+
+    .certifications-section{
+        text-align: left;
+        margin-left: 4rem;
+        width: 500px;
+    }
+    .resume-hide-if-big{
+        display: none;
+    }
+    .certifications-section h4{
+        margin-left: 10px;
+    }
+
+    .work-experience h3{
+        margin-left: -10px;
+    }
+
+}
+
+.sub-sub-header{
+    text-align: center;
+    margin: -1rem 0 0;
+}
+
+.resume-subheading-tex{
+    animation: slower-faid-in 7s infinite;
+    line-height: 1.3;
+    font-size: 1.5em;
+}
+
+@media only screen and (min-width: 450px){
+    .resume-subheader{
+        font-size: 2em;
+        text-align: center;
+    }
+}
+
+@keyframes slower-faid-in {
+      0% {
+        opacity:0;
+    }
+      20% {
+        opacity:0.4;
+    }
+      40% {
+        opacity:1;
+    }
+      100% {
+        opacity: 1;
+    }
 }

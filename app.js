@@ -38,7 +38,7 @@ const changeGalleyImage = setInterval(function() {
     spaceBattleImageIndex = 0;
    }
 
-   spaceBattleGallert.css('background-image', `url('${spaceBattleImages[spaceBattleImageIndex]}')`)
+   spaceBattleGallert.attr('src', `${spaceBattleImages[spaceBattleImageIndex]}`)
    console.log('new image')
    spaceBattleImageIndex++;
 }, 5000);
