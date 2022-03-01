@@ -14,3 +14,5 @@ About me is done,  went back to change the resume to make it even more like the 
 I'm researching to make a form for my contact page. I find myself not pleased with the way my projects look, if I have the time, I have to go back and make them look presentable for my portfolio. getting more and more into my obsessive perfectionist tendencies as the day progresses. Nothing seems to meet my standards of perfection as of right now.
 
 I'm also forgetting to commit and update my README file.
+
+Inital Form idea did't work, on my way to make another one one, which might be even more impresive.

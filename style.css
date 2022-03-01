@@ -275,14 +275,16 @@ footer{
 
 .heading {
    letter-spacing: .3rem;
-	background-image: url(https://media.giphy.com/media/Byour3OgR0nWnRR6Tc/giphy.gif);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.9)), url(https://media.giphy.com/media/Byour3OgR0nWnRR6Tc/giphy.gif);
+    /* the gradient is to make the background look darker */
 	background-size: cover;
 	color: transparent;
 	background-clip: text;
     -webkit-background-clip: text;
+    /* This is where i learn about this css property
+    https://developer.mozilla.org/en-US/docs/Web/CSS/background-clip */
 	font-size: 5.5rem;
 	line-height: .75;
-	margin: 10px 0;
     font-weight: 700;
 }
 @media only screen and (min-width: 450px){
@@ -318,45 +320,25 @@ footer{
     align-items: center;
     height: 100vh;
     width: 100%;
+    font-size: 28px;
 }
-.waviy-header {
+.shadow-header {
     -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.5));
-    font-size: 52px;
-    pointer-events: none;
 }
-.waviy-header span {
-    position: relastive;
-    display: inline-block;
+.shadow-header span {
     color: #fff;
     text-transform: uppercase;
-    animation: jumps-shadows 1s infinite;
-    animation-delay: calc(.1s * var(--css-jumpy));
-}
- @keyframes jumps-shadows {
-    0%{
-      transform: translateY(0)
-    }
-    20% {
-      transform: translateY(-20px)
-    }
-    40%{
-      transform: translateY(0)
-    }
-    100%{
-      transform: translateY(0)
-    }
-    
 }
 
 @media only screen and (min-width: 450px){
-    .waviy-header {
+    .shadow-header {
         font-size: 4.1rem;
     }
 
 }
 
 @media only screen and (min-width: 768px){
-    .waviy-header {
+    .shadow-header{
         font-size: 7rem;
     }
 
@@ -371,22 +353,25 @@ footer{
 .flipped-h2{
     font-weight: 500;
     margin: 30px auto;
-    z-index: 1;
 }
 
 .flipped-h2 span{
-    margin-left: -2px;
-    position: relative;
     display: inline-block;
-    font-size: 40px;
+    /* transform: rotateY(); or any transfor for that matter doesn't work if the text is not inline-block i learned */
     text-transform: capitalize;
+    font-size: 1.2em;
     animation: text-flipper 3s infinite;
+    /* text animation: had to be 3s so that my whole name would do it but never at the same time */
     animation-delay: calc(0.2s * var(--flip));
-    z-index: 1;
+    /* flip is a variabe in css, that has a number next to it beacause with the var() function what I'm doind is taking every  variable (e.i. --flip:1 ) and giving it a delay of .02s so that they flip before the other one flips (e.i. --flip:2), but also none of them do it a the same time, and it's never static either which is what i wanted; */
+    /* calc is a function build in CSS to allow you to make calculations on a propety on css. In this instance the I'm using it to apply the delay to every one of the variables so that they don'f lip together.
+    https://developer.mozilla.org/en-US/docs/Web/CSS/animation-delay */
+    /* to name a variable you do it with the -- first  */
 }
 
 @keyframes text-flipper {
     0%{
+        /* I'm rotaring it on the Y axis which is the vertical one, I had to play around it it a lot to make sure that they would  */
         transform: rotateY(360deg);
     }
     80%{
@@ -630,6 +615,7 @@ footer{
     }
     .resume-section-grid{
         grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 60px;
         max-width: 1200px;
     }
     .resume-skills-article, .education-article{
@@ -719,61 +705,73 @@ footer{
     }
 }
 
-.open-form{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    width: 300px;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    border: 1px solid #333;
-    border-radius: 10px;
-    z-index: 200;
+.skills-main{
+    margin: auto;
+    display: grid;
+    grid-auto-columns: fit-content(80%) ;
+    justify-content: center;
+    margin: 40px auto 120px;
 }
 
-.contact-links{
-    height: 100vh;
-}
-
-.form-header{
+.skills-article i {
+    font-size: 40px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    border-bottom: 1px solid #333;
-    padding: 10px 10px;
+    margin: 35px auto 20px;
 }
 
-.form-header h3{
-    font-weight: 500;
-    font-size: 1.5em;
+
+.skills-article p{
+    padding: 5px;
+    font-weight: 100;
+    border-top: 1px solid #333 ;
+    border-radius: 1px;
+    text-align: center;
+    min-height: 100%;
+    line-height: 1.3rem;
+
 }
 
-.close-button-form{
-    cursor: pointer;
-    background: none;
-    border: none;
-    outline: none;
-    font-size: 1.5em;
+.skills-article strong{
+    line-height: 3rem;
+    font-weight: 300;
+
 }
 
-.contact-form{
-    padding: 10px 15px;
+.jquery-logo{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10.3px;
+    margin-bottom: -15.8px;
 }
 
-#overlay{
-    position: absolute;
-    opacity: 1;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    pointer-events: none;
-    z-index: 100;
-    cursor: not-allowed;
-    pointer-events: none;
+.vscode-logo{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 5px;
+
+}
+@media only screen and (min-width: 650px){
+    .skills-main{
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 40px;
+        max-width: 95%;
+    }
 }
 
-#overlay.active{
-    opacity: 1;
+@media only screen and (min-width: 990px){
+    .skills-main{
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 60px;
+        max-width: 95%;
+    }
+
+   
+    
 }
