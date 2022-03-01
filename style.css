@@ -236,6 +236,11 @@ footer{
     display: inline-block;
 }
 
+.footer-links:hover{
+    transition: .3s ease-in-out;
+    color: rgb(190, 190, 190);
+}
+
 @media only screen and (min-width: 450px){
     .ul-footer{
         flex-direction: row;
@@ -275,7 +280,7 @@ footer{
 
 .heading {
    letter-spacing: .3rem;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.9)), url(https://media.giphy.com/media/Byour3OgR0nWnRR6Tc/giphy.gif);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.5)), url(https://media.giphy.com/media/Byour3OgR0nWnRR6Tc/giphy.gif);
     /* the gradient is to make the background look darker */
 	background-size: cover;
 	color: transparent;
@@ -449,25 +454,6 @@ footer{
 
 /* go to contacst button */
 
-.button-primary{
-    border: none;
-    background: url('https://media.giphy.com/media/ToMjGpMhkemTU2YQUjC/giphy.gif');
-    color: white;
-    border-radius: 5px;
-    padding: 10px;
-    font-size: 1em;
-    margin: 10px auto;
-    opacity: 1;
-    transition: .5s ease-in-out;
-}
-.button-primary:hover{
-    cursor: pointer;
-    opacity: 0.8;
-    transition: .5s ease-in-out;
-}
-.contact-button-area{
-    display: flex;
-}
 
 @media only screen and (min-width: 450px){
     .button-primary{
@@ -541,9 +527,11 @@ footer{
     .project-grid{
         grid-template-columns: repeat(2, auto);
         column-gap: 9px;
-        }
+    }
 
 }
+
+/* resume section */
 
 .resume-article{
     width: 350px ;
@@ -705,6 +693,8 @@ footer{
     }
 }
 
+/* skilss section  */
+
 .skills-main{
     margin: auto;
     display: grid;
@@ -774,4 +764,196 @@ footer{
 
    
     
+}
+
+.icon-credits{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.icon-credits a{
+    text-decoration: none;
+    color: #777;
+
+}
+.icon-credits p{
+    font-style: italic;
+    font-size: 8px;
+    color: #333;
+}
+
+
+/* concact section  */
+.contact-links{
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto;
+}
+.contact-links a{
+    text-decoration: none;
+    color: #333;
+    font-size: 0.8rem;
+    margin-top: 20px;
+}
+
+
+.contact-links .fa-stack-1x:hover {
+    color: rgb(121, 121, 121);
+    transition: .3s ease-in-out;
+}
+
+.contact-section{
+    padding: 10px;
+}
+.name-form, .email-form, textarea {
+    margin: 5px auto;
+    padding: 5px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px #666666 solid;
+}
+
+.button-form{
+    width: 300px;
+    padding: 8px 0;
+    background: #666666;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+}
+.button-form:hover{
+    transition: .3s ease-in-out;
+    background: #333;
+}
+
+.contact-main{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 90px;
+}
+    /* https://fontawesome.com/docs/web/style/stack  use for ICONS! so cool!*/
+
+.contact-info-with-icons p a{
+    color: black;
+    text-decoration: none;
+}
+
+.contact-info-with-icons {
+    margin: 20px auto;
+    text-align: center;
+    width: 320px;
+    line-height: 1.3rem;
+}
+
+.contact-info-with-icons i{
+    font-size: 30px;
+    color: #333;
+    margin: 5px auto;
+    padding: 5px;
+}
+
+
+.contact-main{
+    display: none;
+}
+
+/* this is the acordion only for mobile version */
+.accordion{
+    margin: 100px auto;
+}
+.accordion-item{
+    width: 330px;
+    border: 1px solid rgb(243, 243, 243);
+    border-radius: 5px;
+    height: auto;
+    padding: 0;
+}
+
+.accordion-header{
+    font-weight: 100;
+}
+.accordion-button{
+    height: 45px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 14px;
+    background-color: rgb(243, 243, 243);
+    border: 0.5px solid gray;
+    border-radius: 10px;
+    background-color: #666;
+    color: white;
+
+}
+
+.accordion-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+}
+
+.accordion-button:hover{
+  color: white;
+  transition: .3s ease-in-out;
+  text-transform: uppercase;
+  background-color: #333;
+
+}
+.accordion-toggle-icon{
+    font-size: 1.2rem;
+    font-weight: 100;
+    margin-right: 10px;
+    transform: rotate(0deg);
+    transition: 0.4s ease-in-out;
+}
+
+.accordion-collapse{
+    display: none;
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+
+
+.accordion-toggle-down{
+    font-size: 1.2rem;
+    font-weight: 100;
+    margin-right: 10px;
+    transform: rotate(180deg);
+    transition: 0.5s ease-in-out;
+}
+
+.accordion-show{
+    transition: 1s ease-in-out;
+    display: block;
+    height: auto;
+    width: fit-content;
+    opacity: 1;
+}
+
+
+@media only screen and (min-width: 650px){
+    .contact-main{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .acordion-mobile-version{
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 990px){
+    .contact-main{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
 }

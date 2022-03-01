@@ -43,3 +43,37 @@ const imageChanger = (img, imgGallery) => {
 }
 
 imageChanger(spaceBattleGallery, spaceBattleImages)
+
+
+const accordionButtonOne = document.querySelector('#accordion-button-1');
+const accodionNotShowOne =  document.querySelector('#collapsed-accordion-one');
+const rotateIconOne = document.querySelector('.icon-1');
+
+
+
+const accordionButtonTwo = document.querySelector('#accordion-button-2');
+const accodionNotShowTwo =  document.querySelector('#collapsed-accordion-two');
+const rotateIconTwo = document.querySelector('.icon-2');
+
+
+
+const accordionButtonThree = document.querySelector('#accordion-button-3');
+const accodionNotShowThree =  document.querySelector('#collapsed-accordion-three');
+const rotateIconThree = document.querySelector('.icon-3');
+
+
+
+accordionButtonOne.addEventListener('click', function(){
+    accodionNotShowOne.classList.toggle('accordion-show');
+    rotateIconOne.classList.toggle('accordion-toggle-down');
+});
+
+accordionButtonTwo.addEventListener('click', function(){
+    accodionNotShowTwo.classList.toggle('accordion-show')
+    rotateIconTwo.classList.toggle('accordion-toggle-down')
+})
+
+accordionButtonThree.addEventListener('click', function(e){
+    accodionNotShowThree.classList.toggle('accordion-show');
+    rotateIconThree.classList.toggle('accordion-toggle-down');
+});

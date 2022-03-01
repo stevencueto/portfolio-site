@@ -16,3 +16,8 @@ I'm researching to make a form for my contact page. I find myself not pleased wi
 I'm also forgetting to commit and update my README file.
 
 Inital Form idea did't work, on my way to make another one one, which might be even more impresive.
+
+# monday
+
+Website is pretty much done, only missing how to make the forms submit, not sure if we can use a helper site or have to make it ourselfs, tomorrow i'll ask ryan about it to see what we can do.
+took the acordion i'd made before and added it to my mobile design, maybe i'll add it to my desktop for the form only.
