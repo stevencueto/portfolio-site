@@ -529,8 +529,6 @@ projects-main{
     justify-content: space-around;
     justify-items: center;
     flex-direction: column;
-    padding: 20px;
-    border: 1px solid #666;
 }
 
 .nasa-figure img{
