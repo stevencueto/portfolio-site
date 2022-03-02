@@ -12,7 +12,7 @@
 </head>
 <body>
     <nav class="navbar">
-        <h2 class="heading-logo">Steven Cueto</h2>
+        <img class="heading-logo" src="images/logo.png" alt="">
         <div class="toggle-button">
             <hr class="bar"/>
             <hr class="bar"/>
@@ -69,15 +69,28 @@
                 </span>
             </a>
         </section>
-        <section class="contact-section">
-                <form action="" class="contact-form" id="contact-form-desktop">
-                    <input type="text" id="name" name="name" placeholder="NAME" class="name-form" required><br>
-                    <input type="text" id="email" name="email" placeholder="EMAIL" class="email-form" required><br>
-                    <textarea rows="10" placeholder="MESSAGE" class="name" name="message" class="message-form"required></textarea><br>
-                    <button class="button-form send-button" id="submit" type="submit">
-                            <i class="fa-solid fa-cloud-arrow-up"></i>
+        <section class="accordion">
+            <div class="accordion" id="accordion-demo">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading-1">
+                    <button class="accordion-button" id="accordion-button-1">
+                    Contact Form <div class="accordion-toggle-icon icon-1"> ↓ </div>
                     </button>
-                </form>
+                    </h2>
+                    <div id="collapsed-accordion-one" class="accordion-collapse">
+                        <div class="accordion-body">
+                            <form action="" id="contact-form" class="contact-section contact-from" action=”mailto:steven.cueto@icloud.com” method=”POST” enctype=”multipart/form-data”>
+                                <input type="text" id="name" name="name" placeholder="NAME" class="name-form" required value=""><br>
+                                <input type="text" id="email" name="email" placeholder="EMAIL" class="email-form" required value=""><br>
+                                <textarea rows="10" placeholder="MESSAGE" class="name" name="message" class="message-form"required value=""></textarea><br>
+                                <button class="button-form send-button" id="submit-mobile" type="submit">
+                                        <i class="fa-solid fa-cloud-arrow-up"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <section class="contact-info">
             <div class="contact-info-with-icons">
@@ -97,87 +110,7 @@
         </section>
     </main>
 
-    <aside class="acordion-mobile-version">
-        <div class="accordion" id="accordion-demo">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="heading-1">
-              <button class="accordion-button" id="accordion-button-1">
-                Contact Form <div class="accordion-toggle-icon icon-1"> ↓ </div>
-              </button>
-            </h2>
-            <div id="collapsed-accordion-one" class="accordion-collapse">
-              <div class="accordion-body">
-                    <form action="" id="contact-form-mobile" class="contact-section contact-from">
-                        <input type="text" id="name-mobile" name="name" placeholder="NAME" class="name-form" required><br>
-                        <input type="text" id="email-mobile" name="email" placeholder="EMAIL" class="email-form" required><br>
-                        <textarea rows="10" placeholder="MESSAGE" class="name" name="message" class="message-form"required></textarea><br>
-                        <button class="button-form send-button" id="submit-mobile" type="submit">
-                                <i class="fa-solid fa-cloud-arrow-up"></i>
-                        </button>
-                    </form>
-    
-              </div>
-            </div>
-          </div>
-    
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="heading-2">
-              <button class="accordion-button" id="accordion-button-2">
-                Social Media Links <div class="accordion-toggle-icon icon-2"> ↓ </div>
-              </button>
-            </h2>
-            <div id="collapsed-accordion-two" class="accordion-collapse">
-                <div class="contact-info accordion-body">
-                    <div class="contact-info-with-icons">
-    
-                        <i class="fa-solid fa-location-dot"></i>
-                        <p>New York City, NY.</p>
-                    </div>
-                    <div class="contact-info-with-icons">
-                        <i class="fa-solid fa-phone"></i>
-                        <p><a href="6469566696">(646)-956-6696</a><p>
-    
-                    </div>
-                    <div class="contact-info-with-icons">
-                        <i class="fa-solid fa-envelope"></i> 
-                        <p> <a href="mailto:info@stevencueto.com">info@stevencueto.com</a></p>
-                    </div>
-              </div>
-            </div>
-          </div>
-    
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="heading-3">
-              <button class="accordion-button" id="accordion-button-3">
-                Direct Contact <div class="accordion-toggle-icon icon-3"> ↓ </div>
-              </button>
-            </h2>
-            <div id="collapsed-accordion-three" class="accordion-collapse">
-                 <section class="contact-links accordion-body">
-                <a href="https://linkedin.com/in/stevencueto" target="_blank">
-                    <span class="fa-stack fa-2x">
-                        <i class="far fa-circle fa-stack-2x"></i>
-                        <i class="fab fa-linkedin fa-stack-1x "></i>
-                    </span>
-                </a>
-                <a href="https://instagram.com/stevencuetodeaza" target="_blank">
-                    <span class="fa-stack fa-2x">
-                        <i class="far fa-circle fa-stack-2x"></i>
-                        <i class="fab fa-instagram fa-stack-1x "></i>
-                    </span>
-                </a>
-                <a href="https://github.com/stevencueto" target="_blank">
-                    <span class="fa-stack fa-2x">
-                        <i class="far fa-circle fa-stack-2x"></i>
-                        <i class="fab fa-github fa-stack-1x "></i>
-                    </span>
-                </a>
-            </section>
-              </div>
-            </div>
-          </div>
-        </section>
-      </aside>
+  
 
 
 
