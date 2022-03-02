@@ -1075,6 +1075,18 @@ form:focus{
     opacity: 1;
 }
 
+.get-in-contact{
+    margin: 30px auto;
+    font-style: italic;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.get-in-contact h3{
+    font-weight: 100;
+    padding: 10px 0;
+}
+
 
 @media only screen and (min-width: 650px){
     .contact-main{
