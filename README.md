@@ -21,3 +21,13 @@ Inital Form idea did't work, on my way to make another one one, which might be e
 
 Website is pretty much done, only missing how to make the forms submit, not sure if we can use a helper site or have to make it ourselfs, tomorrow i'll ask ryan about it to see what we can do.
 took the acordion i'd made before and added it to my mobile design, maybe i'll add it to my desktop for the form only.
+
+
+# thursday:
+final touches done, started to make an API for NASA image of the day.
+
+
+# wednesday:
+
+was able to finalize the website. still could make more things, going to stop (for now);
+added a thank you message with a personalized name when completing a form

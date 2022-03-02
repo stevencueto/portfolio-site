@@ -523,7 +523,9 @@ projects-main{
     font-size: 2rem;
     margin: 10px auto 1rem;
 }
-
+.api-section{
+    margin-bottom: 40px;
+}
 .nasa-figure{
     display: flex;
     justify-content: space-around;
@@ -579,15 +581,19 @@ input:focus{
     color: white;
     border-radius: 10px;
     width: 200px;
-    padding: 10px 0;
     font-size: 1.3rem;
+}
+.nasa-btn:hover{
+    background-color: #333;
+    transition: .5s ease-in-out;
 }
 
 .moving-button{
-    transition: 1s ease-in-out;
+    padding: 10px 0;
+    transition: .5s ease-in-out;
 }
 .moving-button:hover{
-    transform: translate3d(0px, -10px, 0px);
+    transform: translate3d(0px, -7px, 0px);
 }
 @media only screen and (min-width: 450px){
 
@@ -1084,15 +1090,6 @@ form:focus{
     .contact-main{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-    }
-    .button-form{
-        width: 350px;
-        font-size: 1.5rem;
-    }
-
-    .accordion-button{
-        width: 360px;
-        font-size: 1.3rem;
     }
 
 }

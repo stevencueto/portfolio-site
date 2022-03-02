@@ -13,8 +13,9 @@
 
     document.querySelector('#contact-form').addEventListener('submit', (e) => {
         e.preventDefault();
+        const nameForm = document.querySelector('input[name="name"]').value;
         // https://developer.mozilla.org/en-US/docs/Web/API/HTMLDataElement/value
-        $('#contact-form').css('visibility', 'hidden')
-        $('.accordion-body').append(`<h3>Thank you for contacting me! You'll get a reply ASAP.</h3>`)
+        $('#contact-form').css('display', 'none')
+        $('.accordion-body').append(`<h3>Thank you for contacting me ${nameForm}! You'll get a reply ASAP.</h3>`)
         $('.accordion-body').append('<i class="fa-solid fa-calendar-days"></i>')
     });
