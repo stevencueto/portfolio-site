@@ -858,6 +858,10 @@ projects-main{
     font-size: 1.1rem;
 }
 
+form:focus{
+    outline: none;
+}
+
 .button-form{
     width: 300px;
     padding: 8px 0;
