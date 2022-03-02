@@ -524,9 +524,73 @@ projects-main{
     margin: 10px auto 1rem;
 }
 
+.nasa-figure{
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid #666;
+}
 
+.nasa-figure img{
+    width: 350px;
+    padding: 20px;
+    margin-top: 30px;
+}
 
+.nasa-figure h3{
+    margin: 10px auto;
+    padding: 5px 0;
+    font-weight: 300;
+    text-align: center;
+}
 
+.nasa-figure p{
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 1.3;
+    letter-spacing: .3px;
+}
+
+.nasa-form{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+}
+.label-nasa{
+    font-size: 1.3rem;
+}
+
+input[type="date"] {
+    display: -webkit-inline-flex;
+    padding: 5px 45px;
+    -webkit-padding-start: 40px;
+    font-size: 1.1rem;
+}
+
+input:focus{
+    outline: none;
+}
+.nasa-btn{
+    border: none;
+    background-color: #666;
+    color: white;
+    border-radius: 10px;
+    width: 200px;
+    padding: 10px 0;
+    font-size: 1.3rem;
+}
+
+.moving-button{
+    transition: 1s ease-in-out;
+}
+.moving-button:hover{
+    transform: translate3d(0px, -10px, 0px);
+}
 @media only screen and (min-width: 450px){
 
     .gallery{
@@ -538,7 +602,22 @@ projects-main{
    .gallery img{
        margin-left: auto;
    }
+
+   .nasa-description p{
+    padding: 10px;
+    font-size: 20px;
+   }
+
+   .nasa-figure img{
+    width: 80%;
+    padding: 20px;
+    margin-top: 30px;
+    }
+
+
 }
+
+
 
 
 @media only screen and (min-width: 768px){
@@ -547,6 +626,15 @@ projects-main{
         column-gap: 9px;
     }
 
+    .nasa-figure{
+        display: flex;
+        justify-content: space-around;
+        justify-items: center;
+        flex-direction: column;
+        padding: 20px; 
+    }
+    
+    
 }
 
 /* resume section */

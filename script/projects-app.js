@@ -21,17 +21,24 @@
     const apiKey = "Ac9Shdxp7X2m6qGG8rO2X8HEplwi8lo8a4sxXBxE"
     async function nasaImageOfTheDay(event){
         event.preventDefault();
-        // const inputeDate = document.querySelector('input[name="search-term"]').value;
-        const response = await fetch(`https://api.nasa.gov/planetary/apod?api_key=${apiKey}`);
+        const inputDate = document.querySelector('input[name="picture-date"]').value;
+        const response = await fetch(`https://api.nasa.gov/planetary/apod?api_key=${apiKey}&date=${inputDate}`);
         const data = await response.json();
-        console.log(response)
-        console.log(data)
         nasaConstructer(data)
     }
     const nasaConstructer = (data) => {
         const $nasaResults = $('#nasa-results');
-        $nasaResults.append(`<h3>${data.title}</h3>`)
-
+        const $figure = $('<figure class="nasa-figure"> </figure>')
+        $nasaResults.append($figure);
+        $figure.append(`<img src=${data.hdurl}>`)
+        $figure.append(`<h3>${data.title}</h3>`)
+        $figure.append(`<p>${data.explanation}</p>`)
+        if(data.copyright){
+            $figure.append(`<p>${data.copyright}</p>`)
+        }
     }
 
     document.querySelector("#nasa-image-form").addEventListener("submit", nasaImageOfTheDay)
+
+
+    // https://github.com/nasa/apod-api
