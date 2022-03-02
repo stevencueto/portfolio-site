@@ -512,6 +512,20 @@ projects-main{
     background-color: rgba(255, 255, 255, 0.8);
     margin-top: 5px;
 }
+
+.accordion-body h3{
+    margin: 30px auto 0;
+    font-weight: 100;
+    text-align: center;
+}
+.accordion-body i {
+    font-size: 2rem;
+    margin: 10px auto 1rem;
+}
+
+
+
+
 @media only screen and (min-width: 450px){
 
     .gallery{

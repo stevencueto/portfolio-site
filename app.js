@@ -60,4 +60,7 @@ accordionButtonOne.addEventListener('click', function(){
 document.getElementById('contact-form').addEventListener('submit', (e) => {
     e.preventDefault();
     // https://developer.mozilla.org/en-US/docs/Web/API/HTMLDataElement/value
+    $('#contact-form').remove()
+    $('.accordion-body').append(`<h3>Thank you for contacting me! You'll get a reply ASAP.</h3>`)
+    $('.accordion-body').append('<i class="fa-solid fa-calendar-days"></i>')
   });
