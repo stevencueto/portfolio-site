@@ -517,6 +517,7 @@ projects-main{
     margin: 30px auto 0;
     font-weight: 100;
     text-align: center;
+    width: 300px;
 }
 .accordion-body i {
     font-size: 2rem;
@@ -984,10 +985,15 @@ projects-main{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
-    .name-form, .email-form, textarea {
-        width: 350px;
-        font-size: 18px;
 
+   
+
+}
+
+@media only screen and (min-width: 990px){
+    .contact-main{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
     .button-form{
         width: 350px;
@@ -998,15 +1004,6 @@ projects-main{
         width: 360px;
         font-size: 1.3rem;
     }
-
-}
-
-@media only screen and (min-width: 990px){
-    .contact-main{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
-
 
 }
 
