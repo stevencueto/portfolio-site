@@ -277,7 +277,7 @@ footer{
 }
 
 .heading {
-   letter-spacing: .3rem;
+    letter-spacing: .3rem;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.5)), url(https://media.giphy.com/media/Byour3OgR0nWnRR6Tc/giphy.gif);
     /* the gradient is to make the background look darker */
 	background-size: cover;
@@ -326,7 +326,7 @@ footer{
     font-size: 28px;
 }
 .shadow-header {
-    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.5));
+    -webkit-box-reflect: below -30px linear-gradient(transparent, rgba(0,0,0,.5));
 }
 .shadow-header span {
     color: #fff;
@@ -370,11 +370,13 @@ footer{
     /* calc is a function build in CSS to allow you to make calculations on a propety on css. In this instance the I'm using it to apply the delay to every one of the variables so that they don'f lip together.
     https://developer.mozilla.org/en-US/docs/Web/CSS/animation-delay */
     /* to name a variable you do it with the -- first  */
+    /* https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties */
+    /* https://css-tricks.com/a-complete-guide-to-calc-in-css/ */
 }
 
 @keyframes text-flipper {
     0%{
-        /* I'm rotaring it on the Y axis which is the vertical one, I had to play around it it a lot to make sure that they would  */
+        /* I'm rotaring it on the Y axis which is the vertical one, I had to play around it it a lot to make sure that they would rotate individually and once again after done  */
         transform: rotateY(360deg);
     }
     80%{

@@ -59,7 +59,6 @@ accordionButtonOne.addEventListener('click', function(){
 
 document.getElementById('contact-form').addEventListener('submit', (e) => {
     e.preventDefault();
-    e.target.elements.name.value = '';
-    e.target.elements.email.value = '';
-    e.target.elements.message.value = '';
+    $('#submit-button').prop('disabled', true);
+    // https://developer.mozilla.org/en-US/docs/Web/API/HTMLDataElement/value
   });
