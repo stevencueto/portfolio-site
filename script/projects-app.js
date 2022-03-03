@@ -30,12 +30,17 @@
         const $nasaResults = $('#nasa-results');
         const $figure = $('<figure class="nasa-figure"> </figure>')
         $nasaResults.append($figure);
-        $figure.append(`<img src=${data.hdurl}>`)
-        $figure.append(`<h3>${data.title}</h3>`)
-        $figure.append(`<p>${data.explanation}</p>`)
-        if(data.copyright){
-            $figure.append(`<p>${data.copyright}</p>`)
+        if(data.hdurl){
+            $figure.append(`<img src=${data.hdurl}>`)
+            $figure.append(`<h3>${data.title}</h3>`)
+            $figure.append(`<p>${data.explanation}</p>`)
+            if(data.copyright){
+                $figure.append(`<p>${data.copyright}</p>`)
+            }
+        }else{
+            $figure.append(`<p>Seems like nasa didn't have anything for that date, try again</p>`)
         }
+       
     }
 
     document.querySelector("#nasa-image-form").addEventListener("submit", nasaImageOfTheDay)
