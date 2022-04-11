@@ -1,6 +1,6 @@
     // function is to change the image in the project section section
     const spaceBattleGallery = $('.space-battle');
-    let spaceBattleImages = ["images/space-battle-1.png", "images/space-battle-2.png", "images/space-battle-3.png", "images/space-battle-4.png","images/space-battle-5.png"]
+    const spaceBattleImages = ["images/your-movie-hub-1.png", "images/your-movie-hub-2.png","images/your-movie-hub-3.png","images/your-movie-hub-4.png","images/your-movie-hub-5.png","images/your-movie-hub-6.png","images/your-movie-hub-7.png",]
 
     const imageChanger = (img, imgGallery) => {
         let imageIndex = 0;
